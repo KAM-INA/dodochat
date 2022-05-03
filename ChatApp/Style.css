@@ -1,0 +1,392 @@
+/*General Codes*/
+
+.hef{font-family:'Luckiest Guy', cursive;}
+
+
+h3, p{
+  margin: auto;
+}
+a{
+  text-decoration:none;
+
+}
+html{
+  font-family:cursive
+
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f7f7f7;
+}
+
+
+/*Form Code*/
+.form_paper{
+  background: #fff;
+  width: 450px;
+  border-radius: 16px;
+  box-shadow: 0 0 128px 0 rgb(0, 0, 0 ,0.1),
+              0 32px  64px -48px rgb(0, 0, 0,0.5)
+}
+
+
+.form{
+  padding: 25px 30px ;
+}
+
+.form header{
+  font-size: 45px;
+  font-weight:bold;
+  border-bottom: 2px solid rgba(209, 209, 209, 0.474);
+  padding-bottom: 3px;
+}
+
+
+.form form{
+  margin: 20px 0;
+}
+
+.form form .Error{
+  width: 97.5%;
+  padding: 8px ;
+  text-align: center;
+  margin-bottom: 10px;
+  color: rgb(30, 0, 0);
+  background-color: rgba(255, 141, 141, 0.658);
+  border: 1px solid rgb(30, 0, 0);
+  border-radius: 5px;
+}
+
+.form form .FullName{
+  display: flex;
+}
+
+form .FullName .filed:first-child{
+  margin-right: 10px;
+}
+form .FullName .filed:last-child{
+  margin-left: 10px;
+}
+
+.form form .filed{
+  display: flex;
+  position:relative;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+
+.form form .filed label{
+
+  margin: 2px;
+}
+
+.form form .filed input{
+  outline: none;
+}
+
+
+.form form .input input{
+  height: 35px;
+  width: 95%;
+  font-size: 16px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form form .Image input{
+  font-size: 17px;
+}
+
+
+.form form .bottom input{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color:rgb(34, 34, 34) ;
+  font-size: 25px; 
+}
+
+.form form .bottom input:hover{
+  background-color:rgb(53, 53, 53) ;
+}
+
+.form form .filed i{
+  position: absolute;
+  right: 10px;
+  color: #333;
+  top: 57%;
+  cursor: pointer;
+}
+
+
+.form .Link{
+  text-align: center;
+  margin: 10px 0;
+}
+.form .Link a{
+  color: #333;
+  text-decoration:none
+}
+.form .Link a:hover{
+  text-decoration: underline;
+}
+
+
+/*Users List Code*/
+.Users{
+  padding: 25px;
+}
+.Users header,
+.users-list a{
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.form_paper img{
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+:is(.Users, .users-list) .content,
+ a .content {
+  display: flex;
+  align-items: center;
+}
+.Users header .content img{
+  height: 50px;
+  width: 50px;
+}
+:is(.Users, .users-list) .details{
+  margin-left: 15px;
+  color: #000;
+}
+
+.Users header .details span{
+  font-size: 20px;
+  font-weight: 20;
+}
+
+
+.Users header .logout{
+  padding:7px 15px;
+  text-decoration:none;
+  background-color:rgb(34, 34, 34) ;
+  color: rgb(206, 206, 206);
+  border-radius: 5px;
+}
+.Users header .logout:hover{
+  background-color:rgb(53, 53, 53);
+}
+
+.Users .search{
+  display:flex;
+  margin: 20px 0;
+  position: relative;
+  align-items: center;
+  justify-content:space-between ;
+}
+
+.Users .search .text{
+  padding: auto;
+  font-size: 20px;
+}
+
+.Users .search input{
+  position:absolute;
+  height: 42px;
+  width: calc(100% - 80px);
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 0px 13px;
+  font-size: 16px;
+  outline: none;
+}
+.Users .search button{
+
+  cursor: pointer;
+  width: 45px;
+  height: 43px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #fff;
+  background-color: #333;
+}
+
+.users-list{
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+:is(.users-list, .chat-box)::-webkit-scrollbar{
+  width: 0px;
+}
+
+.users-list a{
+  margin-bottom: 15px;
+  page-break-after: 10px;
+  padding: 15px;
+  border-bottom-color: #f1f1ff;
+  border-radius: 5px;
+}
+
+.users-list a:last-child{
+border: none;
+margin: 0px;
+}
+
+.users-list a .content img{
+  height: 40px;
+  width: 40px;
+}
+
+.users-list a .status-dot{
+  color: rgb(99, 176, 99);
+}
+.users-list a .status-dot.offline{
+  color: #ccc;
+}
+
+.users-list :hover{
+  background-color: #ccc;
+}
+
+.users-list a .details span{
+  font-weight:bold;
+}
+
+.users-list a .details p{
+  color: #67676a;
+}
+
+/*Chat area code*/
+
+      /*Chat header*/
+.Chat-area header{
+  display: flex;
+  align-items: center;
+  padding: 18px 30px;
+}
+.Chat-area header .back-icon{
+  color: #333;
+}
+.back-icon-block:hover{
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #333;
+  background-color: #ccc;
+}
+.Chat-area header img{
+  width: 45px;
+  height: 45px;
+  margin: 0 15px;
+}
+.Chat-area header span{
+  font-size: 18px;
+  font-weight: 500;
+}
+      /*Chat box*/
+.chat-box{
+  height: 500px;
+  overflow-y: auto;
+  background: #f7f7f7;
+  padding: 10px 30px 20px 30px;
+  box-shadow: inset 0 32px 32px -32px rgb(0 0 0 / 5%),
+              inset 0 -32px 32px -32px rgb(0 0 0 / 5%);
+}
+.chat-box .chat{
+  margin: 15px 0;
+}
+.chat-box .chat p{
+  padding: 8px 16px;
+  box-shadow: 0 0 32px rgb(0 0 0 / 5%),
+              0px 16px 16px -16px rgb(0 0 0 / 10%);
+}
+
+              /*outgoing*/
+.chat-box .outgoing{
+  display: flex;
+}
+.outgoing .details{
+  margin-left: auto;
+  max-width: calc(100% - 130px);
+}
+.outgoing .details p{
+  word-wrap: break-word;
+  background: #333;
+  color: #fff;
+  border-radius: 18px 18px 0 18px;
+}
+
+              /*incoming*/
+.chat-box .incoming{
+  display: flex;
+  align-items: flex-start;
+}
+.chat-box .incoming img{
+  height: 35px;
+  width: 35px;
+}
+.incoming .details{
+  margin-left: 10px;
+  margin-right: auto;
+  max-width: calc(100% - 130px);
+}
+.incoming .details p{
+  word-wrap: break-word;
+  background: #fff;
+  color: #333;
+  border-radius: 0px 18px 18px 18px;
+}
+
+.Chat-area .typing-area{
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.typing-area input{
+  height: 45px;
+  width: calc(100% - 58px);
+  font-size: 17px;
+  padding: 0 13px;
+  outline: none;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px ;
+
+}
+.typing-area button{
+  width: 55px;
+  height: 47px;
+  outline: none;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.typing-area button:hover{
+  background-color:rgb(82, 82, 82);
+}
+.typing-area{
+  align-content: center;
+}
